@@ -44,7 +44,6 @@ def product_clicker():
     for i in range(len(worthy_products)):
         if big_cookie_count() > worthy_products[i]:
             target_product = driver.find_element(By.XPATH, f'//*[@id="product{i}"]')
-
             target_product.click()
 
 
